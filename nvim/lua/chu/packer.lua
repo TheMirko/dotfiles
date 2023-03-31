@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
       end
   })
   use('folke/tokyonight.nvim')
+  use({ "catppuccin/nvim", as = "catppuccin" })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
