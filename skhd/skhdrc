@@ -23,7 +23,7 @@ alt - r : yabai -m space --rotate 90
 alt - f : yabai -m window --toggle zoom-fullscreen
 
 # alt - s : yabai -m window --toggle 
-alt - s : yabai -m window --toggle sticky;\
+alt - m : yabai -m window --toggle sticky;\
           yabai -m window --toggle topmost;\
           yabai -m window --toggle pip
 
@@ -36,9 +36,6 @@ alt - t : yabai -m window --toggle float;\
 
 # toggle window split type
 alt - e : yabai -m window --toggle split
-
-# toggle window split type
-alt - m : yabai -m space --toggle mission-control
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance

@@ -8,8 +8,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.3',
+	  -- or                            , branch = '1.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
@@ -50,4 +50,13 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+  use {
+      "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+        requires = { 
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+        }
+      }
 end)
